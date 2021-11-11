@@ -1,0 +1,115 @@
+[2021-11-11 02:21:02 EST] vlib work && vlog '-timescale' '1ns/1ns' +incdir+$RIVIERA_HOME/vlib/uvm-1.2/src -l uvm_1_2 -err VCP2947 W9 -err VCP2974 W9 -err VCP3003 W9 -err VCP5417 W9 -err VCP6120 W9 -err VCP7862 W9 -err VCP2129 W9 design.sv testbench.sv  && vsim -c -do "vsim +access+r; run -all; exit"  
+VSIMSA: Configuration file changed: `/home/runner/library.cfg'
+ALIB: Library "work" attached.
+work = /home/runner/work/work.lib
+MESSAGE "Pass 1. Scanning modules hierarchy."
+MESSAGE_SP VCP2124 "Package uvm_pkg found in library uvm_1_2."
+MESSAGE "Pass 2. Processing instantiations."
+MESSAGE "Pass 3. Processing behavioral statements."
+MESSAGE "Running Assertions Compiler."
+MESSAGE "Running Optimizer."
+MESSAGE "ELB/DAG code generating."
+MESSAGE "Unit top modules: test."
+MESSAGE "$root top modules: test."
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time: 4[s]."
+ALOG: Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+done
+# Aldec, Inc. Riviera-PRO version 2020.04.130.7729 built for Linux64 on June 10, 2020.
+# HDL, SystemC, and Assertions simulator, debugger, and design environment.
+# (c) 1999-2020 Aldec, Inc. All rights reserved.
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Package 'uvm_pkg' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.6 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library '/usr/share/Riviera-PRO/bin/libsystf.so'
+# ELAB2: Create instances ...
+# KERNEL: Info: Loading library:  /usr/share/Riviera-PRO/bin/uvm_1_2_dpi
+# KERNEL: Time resolution set to 1ns.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.1 [s]
+# SLP: Finished : 0.1 [s]
+# SLP: 0 primitives and 8 (57.14%) other processes in SLP
+# SLP: 16 (0.05%) signals in SLP and 94 (0.31%) interface signals
+# ELAB2: Elaboration final pass complete - time: 2.6 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Riviera-PRO EDU Edition. The performance of simulation is reduced.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 29168 kB (elbread=2082 elab2=22431 kernel=4654 sdf=0)
+# KERNEL: UVM_INFO /home/build/vlib1/vlib/uvm-1.2/src/base/uvm_root.svh(392) @ 0: reporter [UVM/RELNOTES] 
+# KERNEL: ----------------------------------------------------------------
+# KERNEL: UVM-1.2
+# KERNEL: (C) 2007-2014 Mentor Graphics Corporation
+# KERNEL: (C) 2007-2014 Cadence Design Systems, Inc.
+# KERNEL: (C) 2006-2014 Synopsys, Inc.
+# KERNEL: (C) 2011-2013 Cypress Semiconductor Corp.
+# KERNEL: (C) 2013-2014 NVIDIA Corporation
+# KERNEL: ----------------------------------------------------------------
+# KERNEL: 
+# KERNEL:   ***********       IMPORTANT RELEASE NOTES         ************
+# KERNEL: 
+# KERNEL:   You are using a version of the UVM library that has been compiled
+# KERNEL:   with `UVM_NO_DEPRECATED undefined.
+# KERNEL:   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# KERNEL: 
+# KERNEL:   You are using a version of the UVM library that has been compiled
+# KERNEL:   with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+# KERNEL:   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# KERNEL: 
+# KERNEL:       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# KERNEL: 
+# KERNEL: ASDB file was created in location /home/runner/dataset.asdb
+# KERNEL: UVM_INFO @ 0: reporter [RNTST] Running test apb_base_test...
+# KERNEL: UVM_INFO @ 0: uvm_test_top.env.agt [apb_agent::] connect_phase, Connected driver to sequencer
+# KERNEL:                    0 Starting sequence apb_seq run_phase
+# KERNEL: UVM_INFO @ 30: uvm_test_top.env.agt.drv [APB_DRIVER] Got Transaction command=WRITE, addr=3e54278a, data=4a1e9e43 
+# KERNEL: UVM_INFO @ 70: uvm_test_top.env.agt.mon [APB_MONITOR] Got Transaction command=WRITE, addr=3e54278a, data=4a1e9e43 
+# KERNEL: UVM_INFO @ 110: uvm_test_top.env.agt.drv [APB_DRIVER] Got Transaction command=READ, addr=1d410df7, data=fe7ea8ac 
+# KERNEL: UVM_INFO @ 150: uvm_test_top.env.agt.mon [APB_MONITOR] Got Transaction command=READ, addr=1d410df7, data=0 
+# KERNEL: UVM_INFO @ 190: uvm_test_top.env.agt.drv [APB_DRIVER] Got Transaction command=READ, addr=db1adad1, data=673ebd7e 
+# KERNEL: UVM_INFO @ 230: uvm_test_top.env.agt.mon [APB_MONITOR] Got Transaction command=READ, addr=db1adad1, data=0 
+# KERNEL: UVM_INFO @ 270: uvm_test_top.env.agt.drv [APB_DRIVER] Got Transaction command=WRITE, addr=77e18e18, data=845edcb9 
+# KERNEL: UVM_INFO @ 310: uvm_test_top.env.agt.mon [APB_MONITOR] Got Transaction command=WRITE, addr=77e18e18, data=845edcb9 
+# KERNEL: UVM_INFO @ 350: uvm_test_top.env.agt.drv [APB_DRIVER] Got Transaction command=WRITE, addr=f39527cc, data=55df065d 
+# KERNEL: UVM_INFO @ 390: uvm_test_top.env.agt.mon [APB_MONITOR] Got Transaction command=WRITE, addr=f39527cc, data=55df065d 
+# KERNEL: UVM_INFO @ 430: uvm_test_top.env.agt.drv [APB_DRIVER] Got Transaction command=READ, addr=4e35a7ed, data=dbbf3a6a 
+# KERNEL: UVM_INFO @ 470: uvm_test_top.env.agt.mon [APB_MONITOR] Got Transaction command=READ, addr=4e35a7ed, data=0 
+# KERNEL: UVM_INFO @ 510: uvm_test_top.env.agt.drv [APB_DRIVER] Got Transaction command=READ, addr=87c30e7b, data=15ff78e0 
+# KERNEL: UVM_INFO @ 550: uvm_test_top.env.agt.mon [APB_MONITOR] Got Transaction command=READ, addr=87c30e7b, data=0 
+# KERNEL: UVM_INFO @ 590: uvm_test_top.env.agt.drv [APB_DRIVER] Got Transaction command=WRITE, addr=a03d5b76, data=49fc1bf 
+# KERNEL: UVM_INFO @ 630: uvm_test_top.env.agt.mon [APB_MONITOR] Got Transaction command=WRITE, addr=a03d5b76, data=49fc1bf 
+# KERNEL: UVM_INFO @ 670: uvm_test_top.env.agt.drv [APB_DRIVER] Got Transaction command=WRITE, addr=97a48ede, data=a7a01507 
+# KERNEL: UVM_INFO @ 710: uvm_test_top.env.agt.mon [APB_MONITOR] Got Transaction command=WRITE, addr=97a48ede, data=a7a01507 
+# KERNEL: UVM_INFO @ 750: uvm_test_top.env.agt.drv [APB_DRIVER] Got Transaction command=READ, addr=6df8a8b3, data=ff0072b8 
+# KERNEL: UVM_INFO @ 790: uvm_test_top.env.agt.mon [APB_MONITOR] Got Transaction command=READ, addr=6df8a8b3, data=0 
+# KERNEL: UVM_INFO /home/build/vlib1/vlib/uvm-1.2/src/base/uvm_objection.svh(1271) @ 890: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# KERNEL: UVM_INFO /home/build/vlib1/vlib/uvm-1.2/src/base/uvm_report_server.svh(869) @ 890: reporter [UVM/REPORT/SERVER] 
+# KERNEL: --- UVM Report Summary ---
+# KERNEL: 
+# KERNEL: ** Report counts by severity
+# KERNEL: UVM_INFO :   24
+# KERNEL: UVM_WARNING :    0
+# KERNEL: UVM_ERROR :    0
+# KERNEL: UVM_FATAL :    0
+# KERNEL: ** Report counts by id
+# KERNEL: [APB_DRIVER]    10
+# KERNEL: [APB_MONITOR]    10
+# KERNEL: [RNTST]     1
+# KERNEL: [TEST_DONE]     1
+# KERNEL: [UVM/RELNOTES]     1
+# KERNEL: [apb_agent::]     1
+# KERNEL: 
+# RUNTIME: Info: RUNTIME_0068 uvm_root.svh (521): $finish called.
+# KERNEL: Time: 890 ns,  Iteration: 56,  Instance: /test,  Process: @INITIAL#42_2@.
+# KERNEL: stopped at time: 890 ns
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+# VSIM: Simulation has finished.
+Done
